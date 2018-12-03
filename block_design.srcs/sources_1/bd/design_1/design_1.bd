@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x4327A6F0B64DF900" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.1" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>CLK.CLK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>FREQ_HZ</spirit:name>
+            <spirit:value>100000000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>PHASE</spirit:name>
+            <spirit:value>0.0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CLK_DOMAIN</spirit:name>
+            <spirit:value>/clk_wiz_clk_out1</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>ASSOCIATED_RESET</spirit:name>
+            <spirit:value>RESET</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>RST.RESET</spirit:name>
+        <spirit:displayName>Reset</spirit:displayName>
+        <spirit:description>Reset</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>RST</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>RESET</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>POLARITY</spirit:name>
+            <spirit:value>ACTIVE_LOW</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>TDI</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>TCK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>TMS</spirit:name>
+          <spirit:wire>
+            <spirit:direction>inout</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>TDO</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PORTIN</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PORTOUT</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>uart0_rxd</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>uart0_txd</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CLK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RESET</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>ARM_SOC_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ARM_SOC" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ARM_SOC_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>cmsdk_mcu_mtx4x2_lite_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="cmsdk_mcu_mtx4x2_lite" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_cmsdk_mcu_mtx4x2_lite_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>uAHB2RAM_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="uAHB2RAM" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_uAHB2RAM_0_6</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>cmsdk_apb_subsystem_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="cmsdk_apb_subsystem" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_cmsdk_apb_subsystem_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>cmsdk_ahb_gpio_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="cmsdk_ahb_gpio" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_cmsdk_ahb_gpio_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>TDI_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="TDI"/>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="TDI"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>TCK_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="TCK"/>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="TCK"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Net</spirit:name>
+        <spirit:externalPortReference spirit:portRef="TMS"/>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="TMS"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_TDO</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="TDO"/>
+        <spirit:externalPortReference spirit:portRef="TDO"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_hbursts</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hbursts"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HBURSTS0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_hmastlocks</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hmastlocks"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HMASTLOCKS0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_hprots</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hprots"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HPROTS0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_haddrs</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="haddrs"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HADDRS0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_hsizes</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hsizes"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HSIZES0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_htranss</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="htranss"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HTRANSS0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_hwdatas</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hwdatas"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HWDATAS0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_hwrites</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hwrites"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HWRITES0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HRDATAS0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HRDATAS0"/>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hrdatas"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HREADYS0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HREADYS0"/>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="hreadys"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_fclk_ss</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="fclk_ss"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HCLK"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="fclk"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HCLK"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HCLK"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="FCLK"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="PCLK"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ARM_SOC_0_srs_rst_ss</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="srs_rst_ss"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HRESETn"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="reg_sys_rst_n"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HRESETn"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HRESETn"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="PRESETn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HSELM0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HSELM0"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="hsel"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HADDRM0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HADDRM0"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="haddrs"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HTRANSM0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HTRANSM0"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="htranss"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HWRITEM0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HWRITEM0"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="hwrites"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HSIZEM0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HSIZEM0"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="hsizes"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HWDATAM0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HWDATAM0"/>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="hwdatas"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>uAHB2RAM_0_hrdatas</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="hrdatas"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HRDATAM0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>uAHB2RAM_0_hreadyss</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="uAHB2RAM_0" spirit:portRef="hreadyss"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HREADYOUTM0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HSELM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HSELM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HSEL"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HADDRM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HADDRM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HADDR"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HTRANSM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HTRANSM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HTRANS"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HTRANS"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HWRITEM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HWRITEM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HWRITE"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HSIZEM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HSIZEM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HSIZE"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HSIZE"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HPROTM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HPROTM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HPROT"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HWDATAM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HWDATAM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HWDATA"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_HREADYOUT</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HREADYOUT"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HREADYOUTM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HREADY"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_HRDATA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HRDATA"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HRDATAM1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_HRESP</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HRESP"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HRESPM1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_mcu_mtx4x2_lite_0_HREADYMUXM1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_mcu_mtx4x2_lite_0" spirit:portRef="HREADYMUXM1"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="HREADY"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_ext12_psel</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="ext12_psel"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HSEL"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_PADDR</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="PADDR"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HADDR"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_PWRITE</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="PWRITE"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HWRITE"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_PWDATA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="PWDATA"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HWDATA"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_ahb_gpio_0_HRDATA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HRDATA"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="ext12_prdata"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_ahb_gpio_0_HREADYOUT</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="HREADYOUT"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="ext12_pready"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>PORTIN_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="PORTIN"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="PORTIN"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_ahb_gpio_0_PORTOUT</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_ahb_gpio_0" spirit:portRef="PORTOUT"/>
+        <spirit:externalPortReference spirit:portRef="PORTOUT"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>uart0_rxd_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="uart0_rxd"/>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="uart0_rxd"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cmsdk_apb_subsystem_0_uart0_txd</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cmsdk_apb_subsystem_0" spirit:portRef="uart0_txd"/>
+        <spirit:externalPortReference spirit:portRef="uart0_txd"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CLK_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="CLK"/>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="CLK"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RESET_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="RESET"/>
+        <spirit:internalPortReference spirit:componentRef="ARM_SOC_0" spirit:portRef="RESET"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

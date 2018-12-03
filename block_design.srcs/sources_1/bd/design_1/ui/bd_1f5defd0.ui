@@ -1,0 +1,74 @@
+{
+   ExpandedHierarchyInLayout: "",
+   PinnedPorts: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port TDO -pg 1 -y -40 -defaultsOSRD
+preplace port TCK -pg 1 -y 60 -defaultsOSRD
+preplace port uart0_rxd -pg 1 -y 410 -defaultsOSRD -right
+preplace port RESET -pg 1 -y -110 -defaultsOSRD
+preplace port CLK -pg 1 -y -130 -defaultsOSRD
+preplace port TMS -pg 1 -y -60 -defaultsOSRD
+preplace port TDI -pg 1 -y 40 -defaultsOSRD
+preplace port uart0_txd -pg 1 -y 370 -defaultsOSRD
+preplace portBus PORTIN -pg 1 -y 270 -defaultsOSRD -right
+preplace portBus PORTOUT -pg 1 -y 240 -defaultsOSRD
+preplace inst cmsdk_ahb_gpio_0 -pg 1 -lvl 4 -y 130 -defaultsOSRD
+preplace inst uAHB2RAM_0 -pg 1 -lvl 1 -y -430 -defaultsOSRD
+preplace inst ARM_SOC_0 -pg 1 -lvl 1 -y -80 -defaultsOSRD
+preplace inst cmsdk_apb_subsystem_0 -pg 1 -lvl 3 -y 280 -defaultsOSRD
+preplace inst cmsdk_mcu_mtx4x2_lite_0 -pg 1 -lvl 2 -y 30 -defaultsOSRD
+preplace netloc cmsdk_apb_subsystem_0_PWRITE 1 3 1 N
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HWDATAM1 1 2 1 1740
+preplace netloc uAHB2RAM_0_hreadyss 1 1 1 1290
+preplace netloc ARM_SOC_0_hwrites 1 1 1 1300
+preplace netloc ARM_SOC_0_htranss 1 1 1 1230
+preplace netloc ARM_SOC_0_hsizes 1 1 1 1250
+preplace netloc TDI_1 1 0 1 -140J
+preplace netloc CLK_1 1 0 1 NJ
+preplace netloc uart0_rxd_1 1 2 3 1870 640 2290 410 N
+preplace netloc TCK_1 1 0 1 -120J
+preplace netloc ARM_SOC_0_fclk_ss 1 0 4 -90 -570 1240 640 1810 -110 2310
+preplace netloc ARM_SOC_0_hbursts 1 1 1 1220
+preplace netloc ARM_SOC_0_TDO 1 1 4 1210 610 1760 -120 N -120 2650
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HPROTM1 1 2 1 1750
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HREADYS0 1 0 3 -80J 650 NJ 650 1700
+preplace netloc ARM_SOC_0_hprots 1 1 1 1270
+preplace netloc PORTIN_1 1 3 2 2290 300 2640
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HREADYMUXM1 1 2 1 1730
+preplace netloc ARM_SOC_0_hwdatas 1 1 1 1320
+preplace netloc ARM_SOC_0_haddrs 1 1 1 1190
+preplace netloc cmsdk_apb_subsystem_0_PADDR 1 3 1 2260
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HSIZEM0 1 0 3 -140J -600 NJ -600 1870
+preplace netloc cmsdk_apb_subsystem_0_PWDATA 1 3 1 2250
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HSIZEM1 1 2 2 1850 -130 2300
+preplace netloc cmsdk_apb_subsystem_0_uart0_txd 1 3 2 2280 370 NJ
+preplace netloc cmsdk_apb_subsystem_0_HRESP 1 1 3 1310 700 NJ 700 2230
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HWRITEM0 1 0 3 -120J -590 NJ -590 1720
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HTRANSM0 1 0 3 -110J -580 NJ -580 1700
+preplace netloc cmsdk_apb_subsystem_0_HREADYOUT 1 1 3 1320 670 1770J -140 2260
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HWRITEM1 1 2 1 1800
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HTRANSM1 1 2 2 1840 -90 2280
+preplace netloc RESET_1 1 0 1 N
+preplace netloc cmsdk_apb_subsystem_0_HRDATA 1 1 3 1300 690 NJ 690 2240
+preplace netloc cmsdk_ahb_gpio_0_PORTOUT 1 4 1 2640
+preplace netloc ARM_SOC_0_srs_rst_ss 1 0 4 -80 -560 1260 620 1830 -80 2290
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HRDATAS0 1 0 3 -90J 680 NJ 680 1710
+preplace netloc Net 1 1 4 1200J 630 1820 -100 2320 -60 N
+preplace netloc cmsdk_ahb_gpio_0_HREADYOUT 1 2 3 1870 -150 NJ -150 2630
+preplace netloc cmsdk_ahb_gpio_0_HRDATA 1 2 3 1860 -160 NJ -160 2640
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HADDRM0 1 0 3 -130J -620 NJ -620 1860
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HSELM0 1 0 3 -100J -610 NJ -610 1710
+preplace netloc ARM_SOC_0_hmastlocks 1 1 1 1310
+preplace netloc cmsdk_apb_subsystem_0_ext12_psel 1 3 1 2270
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HADDRM1 1 2 1 1790
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HSELM1 1 2 1 1780
+preplace netloc uAHB2RAM_0_hrdatas 1 1 1 1280
+preplace netloc cmsdk_mcu_mtx4x2_lite_0_HWDATAM0 1 0 3 -100J 660 NJ 660 1720
+levelinfo -pg 1 -160 1070 1550 2060 2480 2680 -top -1760 -bot 1020
+",
+}
+{
+   da_board_cnt: "3",
+   da_clkrst_cnt: "5",
+}

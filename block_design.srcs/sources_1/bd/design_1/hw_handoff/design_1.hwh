@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jun 10 19:02:06 2018" VIVADOVERSION="2018.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="TDI" SIGIS="undef" SIGNAME="External_Ports_TDI">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_SOC_0" PORT="TDI"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="TCK" SIGIS="undef" SIGNAME="External_Ports_TCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_SOC_0" PORT="TCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="TMS" SIGIS="undef" SIGNAME="External_Ports_TMS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_SOC_0" PORT="TMS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="TDO" SIGIS="undef" SIGNAME="ARM_SOC_0_TDO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_SOC_0" PORT="TDO"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="PORTIN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_PORTIN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="PORTIN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="PORTOUT" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_ahb_gpio_0_PORTOUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="PORTOUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="uart0_rxd" SIGIS="undef" SIGNAME="External_Ports_uart0_rxd">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="uart0_rxd"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="uart0_txd" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_uart0_txd">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="uart0_txd"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_SOC_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="RESET" SIGIS="rst" SIGNAME="External_Ports_RESET">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_SOC_0" PORT="RESET"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/ARM_SOC_0" HWVERSION="1.0" INSTANCE="ARM_SOC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ARM_SOC" VLNV="xilinx.com:user:ARM_SOC:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ARM_SOC_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" SIGIS="rst" SIGNAME="External_Ports_RESET">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESET"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="TDI" SIGIS="undef" SIGNAME="External_Ports_TDI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TDI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="TCK" SIGIS="undef" SIGNAME="External_Ports_TCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TCK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="TMS" SIGIS="undef" SIGNAME="External_Ports_TMS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TMS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TDO" SIGIS="undef" SIGNAME="ARM_SOC_0_TDO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TDO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="haddrs" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_haddrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HADDRS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="hbursts" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hbursts">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HBURSTS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="hmastlocks" SIGIS="undef" SIGNAME="ARM_SOC_0_hmastlocks">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HMASTLOCKS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="hprots" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hprots">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HPROTS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="hsizes" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hsizes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HSIZES0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="htranss" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_htranss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HTRANSS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="hwdatas" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hwdatas">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HWDATAS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="hwrites" SIGIS="undef" SIGNAME="ARM_SOC_0_hwrites">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HWRITES0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="hrdatas" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HRDATAS0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HRDATAS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="hreadys" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HREADYS0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HREADYS0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fclk_ss" SIGIS="undef" SIGNAME="ARM_SOC_0_fclk_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HCLK"/>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="fclk"/>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HCLK"/>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HCLK"/>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="FCLK"/>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="PCLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="srs_rst_ss" SIGIS="undef" SIGNAME="ARM_SOC_0_srs_rst_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HRESETn"/>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="reg_sys_rst_n"/>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HRESETn"/>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HRESETn"/>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="PRESETn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/cmsdk_ahb_gpio_0" HWVERSION="1.0" INSTANCE="cmsdk_ahb_gpio_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cmsdk_ahb_gpio" VLNV="xilinx.com:user:cmsdk_ahb_gpio:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ALTERNATE_FUNC_MASK" VALUE="0xFFFF"/>
+        <PARAMETER NAME="ALTERNATE_FUNC_DEFAULT" VALUE="0x0000"/>
+        <PARAMETER NAME="BE" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_cmsdk_ahb_gpio_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="HCLK" SIGIS="undef" SIGNAME="ARM_SOC_0_fclk_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="fclk_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HRESETn" SIGIS="undef" SIGNAME="ARM_SOC_0_srs_rst_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="srs_rst_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="FCLK" SIGIS="undef" SIGNAME="ARM_SOC_0_fclk_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="fclk_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HSEL" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_ext12_psel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="ext12_psel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HREADY" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_HREADYOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HREADYOUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="HTRANS" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HTRANSM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HTRANSM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="HSIZE" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSIZEM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HSIZEM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HWRITE" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_PWRITE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="PWRITE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="HADDR" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_PADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="PADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="HWDATA" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_PWDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="PWDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ECOREVNUM" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="PORTIN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_PORTIN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PORTIN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HREADYOUT" SIGIS="undef" SIGNAME="cmsdk_ahb_gpio_0_HREADYOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="ext12_pready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HRESP" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="HRDATA" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_ahb_gpio_0_HRDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="ext12_prdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="PORTOUT" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_ahb_gpio_0_PORTOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PORTOUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="PORTEN" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="PORTFUNC" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="GPIOINT" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="COMBINT" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/cmsdk_apb_subsystem_0" HWVERSION="1.0" INSTANCE="cmsdk_apb_subsystem_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cmsdk_apb_subsystem" VLNV="xilinx.com:user:cmsdk_apb_subsystem:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="APB_EXT_PORT12_ENABLE" VALUE="0"/>
+        <PARAMETER NAME="APB_EXT_PORT13_ENABLE" VALUE="0"/>
+        <PARAMETER NAME="APB_EXT_PORT14_ENABLE" VALUE="0"/>
+        <PARAMETER NAME="APB_EXT_PORT15_ENABLE" VALUE="0"/>
+        <PARAMETER NAME="INCLUDE_IRQ_SYNCHRONIZER" VALUE="0"/>
+        <PARAMETER NAME="INCLUDE_APB_TEST_SLAVE" VALUE="1"/>
+        <PARAMETER NAME="INCLUDE_APB_TIMER0" VALUE="1"/>
+        <PARAMETER NAME="INCLUDE_APB_TIMER1" VALUE="1"/>
+        <PARAMETER NAME="INCLUDE_APB_DUALTIMER0" VALUE="1"/>
+        <PARAMETER NAME="INCLUDE_APB_UART0" VALUE="1"/>
+        <PARAMETER NAME="INCLUDE_APB_UART1" VALUE="1"/>
+        <PARAMETER NAME="INCLUDE_APB_UART2" VALUE="1"/>
+        <PARAMETER NAME="INCLUDE_APB_WATCHDOG" VALUE="1"/>
+        <PARAMETER NAME="BE" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_cmsdk_apb_subsystem_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="HCLK" SIGIS="undef" SIGNAME="ARM_SOC_0_fclk_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="fclk_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HRESETn" SIGIS="undef" SIGNAME="ARM_SOC_0_srs_rst_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="srs_rst_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HSEL" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSELM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HSELM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="HADDR" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HADDRM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HADDRM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="HTRANS" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HTRANSM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HTRANSM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HWRITE" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWRITEM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HWRITEM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="HSIZE" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSIZEM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HSIZEM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="HPROT" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HPROTM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HPROTM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HREADY" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HREADYMUXM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HREADYMUXM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="HWDATA" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWDATAM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HWDATAM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HREADYOUT" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_HREADYOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HREADYOUTM1"/>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="HRDATA" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_HRDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HRDATAM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HRESP" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_HRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HRESPM1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="PCLK" SIGIS="undef" SIGNAME="ARM_SOC_0_fclk_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="fclk_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="PCLKG" SIGIS="undef"/>
+        <PORT DIR="I" NAME="PCLKEN" SIGIS="undef"/>
+        <PORT DIR="I" NAME="PRESETn" SIGIS="undef" SIGNAME="ARM_SOC_0_srs_rst_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="srs_rst_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="PADDR" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_PADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWRITE" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_PWRITE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HWRITE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="PWDATA" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_PWDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HWDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PENABLE" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ext12_psel" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_ext12_psel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HSEL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ext13_psel" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ext14_psel" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ext15_psel" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="ext12_prdata" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_ahb_gpio_0_HRDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HRDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ext12_pready" SIGIS="undef" SIGNAME="cmsdk_ahb_gpio_0_HREADYOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HREADYOUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ext12_pslverr" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="ext13_prdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ext13_pready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ext13_pslverr" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="ext14_prdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ext14_pready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ext14_pslverr" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="ext15_prdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ext15_pready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ext15_pslverr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="APBACTIVE" SIGIS="undef"/>
+        <PORT DIR="I" NAME="uart0_rxd" SIGIS="undef" SIGNAME="External_Ports_uart0_rxd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="uart0_rxd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="uart0_txd" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_uart0_txd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="uart0_txd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="uart0_txen" SIGIS="undef"/>
+        <PORT DIR="I" NAME="uart1_rxd" SIGIS="undef"/>
+        <PORT DIR="O" NAME="uart1_txd" SIGIS="undef"/>
+        <PORT DIR="O" NAME="uart1_txen" SIGIS="undef"/>
+        <PORT DIR="I" NAME="uart2_rxd" SIGIS="undef"/>
+        <PORT DIR="O" NAME="uart2_txd" SIGIS="undef"/>
+        <PORT DIR="O" NAME="uart2_txen" SIGIS="undef"/>
+        <PORT DIR="I" NAME="timer0_extin" SIGIS="undef"/>
+        <PORT DIR="I" NAME="timer1_extin" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="apbsubsys_interrupt" RIGHT="0" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+        <PORT DIR="O" NAME="watchdog_interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+        <PORT DIR="O" NAME="watchdog_reset" SIGIS="rst"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/cmsdk_mcu_mtx4x2_lite_0" HWVERSION="1.0" INSTANCE="cmsdk_mcu_mtx4x2_lite_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cmsdk_mcu_mtx4x2_lite" VLNV="xilinx.com:user:cmsdk_mcu_mtx4x2_lite:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_cmsdk_mcu_mtx4x2_lite_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="HCLK" SIGIS="undef" SIGNAME="ARM_SOC_0_fclk_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="fclk_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HRESETn" SIGIS="undef" SIGNAME="ARM_SOC_0_srs_rst_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="srs_rst_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="REMAP" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HADDRS0" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_haddrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="haddrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="HTRANSS0" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_htranss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="htranss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HWRITES0" SIGIS="undef" SIGNAME="ARM_SOC_0_hwrites">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hwrites"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="HSIZES0" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hsizes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hsizes"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="HBURSTS0" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hbursts">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hbursts"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="HPROTS0" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hprots">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hprots"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="HWDATAS0" RIGHT="0" SIGIS="undef" SIGNAME="ARM_SOC_0_hwdatas">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hwdatas"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HMASTLOCKS0" SIGIS="undef" SIGNAME="ARM_SOC_0_hmastlocks">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hmastlocks"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="HAUSERS0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HWUSERS0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HADDRS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="1" NAME="HTRANSS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HWRITES1" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HSIZES1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HBURSTS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="HPROTS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HWDATAS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HMASTLOCKS1" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HAUSERS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HWUSERS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HADDRS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="1" NAME="HTRANSS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HWRITES2" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HSIZES2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HBURSTS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="HPROTS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HWDATAS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HMASTLOCKS2" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HAUSERS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HWUSERS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HADDRS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="1" NAME="HTRANSS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HWRITES3" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HSIZES3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HBURSTS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="HPROTS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HWDATAS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HMASTLOCKS3" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HAUSERS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HWUSERS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HRDATAM0" RIGHT="0" SIGIS="undef" SIGNAME="uAHB2RAM_0_hrdatas">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="hrdatas"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HREADYOUTM0" SIGIS="undef" SIGNAME="uAHB2RAM_0_hreadyss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="hreadyss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HRESPM0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="HRUSERM0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="HRDATAM1" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_HRDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HRDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HREADYOUTM1" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_HREADYOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HREADYOUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HRESPM1" SIGIS="undef" SIGNAME="cmsdk_apb_subsystem_0_HRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="HRUSERM1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="SCANENABLE" SIGIS="undef"/>
+        <PORT DIR="I" NAME="SCANINHCLK" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HSELM0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSELM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="hsel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="HADDRM0" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HADDRM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="haddrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="HTRANSM0" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HTRANSM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="htranss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HWRITEM0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWRITEM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="hwrites"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="HSIZEM0" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSIZEM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="hsizes"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="HBURSTM0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="HPROTM0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="HWDATAM0" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWDATAM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uAHB2RAM_0" PORT="hwdatas"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HMASTLOCKM0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HREADYMUXM0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="HAUSERM0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="HWUSERM0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HSELM1" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSELM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HSEL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="HADDRM1" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HADDRM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="HTRANSM1" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HTRANSM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HTRANS"/>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HTRANS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HWRITEM1" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWRITEM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HWRITE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="HSIZEM1" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSIZEM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HSIZE"/>
+            <CONNECTION INSTANCE="cmsdk_ahb_gpio_0" PORT="HSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="HBURSTM1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="HPROTM1" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HPROTM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="HWDATAM1" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWDATAM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HWDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HMASTLOCKM1" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HREADYMUXM1" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HREADYMUXM1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_apb_subsystem_0" PORT="HREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="HAUSERM1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="HWUSERM1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="HRDATAS0" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HRDATAS0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hrdatas"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HREADYS0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HREADYS0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="hreadys"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HRESPS0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="HRUSERS0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="HRDATAS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HREADYS1" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HRESPS1" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="HRUSERS1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="HRDATAS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HREADYS2" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HRESPS2" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="HRUSERS2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="HRDATAS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HREADYS3" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HRESPS3" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="HRUSERS3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="SCANOUTHCLK" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/uAHB2RAM_0" HWVERSION="1.0" INSTANCE="uAHB2RAM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uAHB2RAM" VLNV="xilinx.com:user:uAHB2RAM:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_uAHB2RAM_0_6"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="hsel" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSELM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HSELM0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fclk" SIGIS="undef" SIGNAME="ARM_SOC_0_fclk_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="fclk_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reg_sys_rst_n" SIGIS="rst" SIGNAME="ARM_SOC_0_srs_rst_ss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_SOC_0" PORT="srs_rst_ss"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="hreadyss" SIGIS="undef" SIGNAME="uAHB2RAM_0_hreadyss">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HREADYOUTM0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="haddrs" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HADDRM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HADDRM0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="htranss" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HTRANSM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HTRANSM0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="hwrites" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWRITEM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HWRITEM0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="hsizes" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HSIZEM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HSIZEM0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="hwdatas" RIGHT="0" SIGIS="undef" SIGNAME="cmsdk_mcu_mtx4x2_lite_0_HWDATAM0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HWDATAM0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="hrdatas" RIGHT="0" SIGIS="undef" SIGNAME="uAHB2RAM_0_hrdatas">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cmsdk_mcu_mtx4x2_lite_0" PORT="HRDATAM0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
